@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/doge_widget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dip"
+    android:background="@drawable/my_shape"
+    android:orientation="horizontal">
+    
+    <ImageView
+        android:id="@+id/dogecoin_logo"
+        android:layout_width="90dip"
+        android:layout_height="90dip"
+        android:src="@drawable/dogecoin" >
+    </ImageView>
+
+   
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/doge_widget_text">
+        
+         <TextView
+        android:id="@+id/update_dogecoin_usd"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_margin="4dip"
+        android:text="Click me to update"
+        android:textColor="#FFFFFF00" >
+    	</TextView>
+    	
+         <TextView
+        android:id="@+id/update_dogecoin_btc"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_margin="4dip"
+        android:text="Click me to update"
+        android:textColor="#FFFFFF00" >
+    	</TextView>
+    	
+          <TextView
+        android:id="@+id/update_dogecoin_time"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_margin="4dip"
+        android:text="Click me to update"
+        android:textColor="#FFFFFF00" >
+    	</TextView>
+        
+    </LinearLayout>
+    
+   
+    
+   
+	
+</LinearLayout>

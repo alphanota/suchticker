@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/my_shape" >
+
+    
+    
+    
+    <ImageView
+        android:id="@+id/dogecoin_logo"
+        android:layout_width="90dip"
+        android:layout_height="90dip"
+        android:layout_gravity="center"
+        android:src="@drawable/dogecoin" />
+    
+    
+    <LinearLayout
+        android:id="@+id/main_ticket_text"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="updatePrice">
+    
+    <TextView
+        android:id="@+id/main_update_dogecoin_usd"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_margin="4dip"
+        android:text="@string/update_price_prompt"
+        android:textColor="#FFFFFF00" >
+    	</TextView>
+    	
+    
+    <TextView
+        android:id="@+id/main_update_dogecoin_btc"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_margin="4dip"
+        android:text="@string/update_price_prompt"
+        android:textColor="#FFFFFF00" >
+    	</TextView>
+    
+    
+    
+    <TextView
+        android:id="@+id/main_update_dogecoin_time"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_margin="4dip"
+        android:text="@string/update_price_prompt"
+        android:textColor="#FFFFFF00" >
+    	</TextView>
+    
+    
+  	</LinearLayout>
+    
+    
+  	<TextView
+            android:id="@+id/main_text_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/action_settings"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginTop="50dip" ></TextView>
+    
+	    	
+	    	    
+	    	 <CheckBox
+       			android:id="@+id/main_update_wifi_only"       
+       			android:layout_width="wrap_content"
+       			android:layout_height="wrap_content"
+       			android:text="@string/update_over_wifi"
+       			android:textColor="#FFFFFF00" ></CheckBox>
+       
+   			
+   			
+       <Button 
+	    	    android:id="@+id/save_profile_button"
+	    	    android:text="@string/save_settings"
+	    	    android:textColor="#FFFFFFFF"
+	    	    android:textSize="15sp"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_gravity="center_horizontal"
+	    	    android:onClick="savePreferences"
+	    	    ></Button>
+
+</LinearLayout>
